@@ -1,250 +1,233 @@
 :root {
     --cinza-10: #9faba4;
     --preto-5: #000000;
-}
-
-*{
+    --branco: #ffffff;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    margin: 0px;
-}
-
-.cabecalho {
+  }
+  
+  body {
+    font-family: "PT Sans Caption", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .cabecalho {
     display: flex;
     background-color: var(--preto-5);
-    padding: 1.25rem 0 1.25rem 0;
+    padding: 1.25rem 0;
     align-items: center;
     justify-content: center;
-}
-
-.titulo {
+  }
+  
+  .titulo {
     font-family: "EB Garamond", serif;
-    color: #e5e5e5;
+    color: var(--branco);
     font-size: 2rem;
     line-height: 1rem;
     font-weight: 700;
-}
-
-.cabecalho__logo__completo {
+  }
+  
+  .cabecalho__logo__completo {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.cabecalho__logo {
+  }
+  
+  .cabecalho__logo {
     width: 180px;
-}
-
-.conteudo {
+  }
+  
+  /* Main Content */
+  .conteudo {
     display: flex;
-}
-
-.produtos {
+    flex-grow: 1;
+  }
+  
+  .produtos {
     width: 49.7%;
     padding: 2rem;
     gap: 2rem;
     text-align: center;
-    height: 65vh;
-}
-
-.titulo__produtos {
-    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .titulo__produtos {
     font-family: "Lilita One", serif;
     font-size: 1.5rem;
     line-height: 1.5rem;
-}
-
-.container__produtos {
+  }
+  
+  .container__produtos {
     display: flex;
-    box-shadow: 0 10px 5px 10px var(--cinza-10);
     flex-wrap: wrap;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-
-}
-
-::-webkit-scrollbar {
-    width: 0.5rem;
-    height: 256px;
-    background-color: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: var(--preto-5);
-}
-
-.card {
+    box-shadow: 0 10px 5px 10px var(--cinza-10);
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .card {
     width: 200px;
     height: 300px;
     background-color: var(--preto-5);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 10px;
-    gap: 10px;
-    margin-top: 40px;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-.img__carros {
+    margin: 10px;
+  }
+  
+  .img__carros {
     width: 198px;
     height: 176px;
-}
-
-.card-container--info {
-    font-family: "PT Sans Caption", serif;
+    border-radius: 20px;
+  }
+  
+  .card-container--info {
     font-weight: 400;
     font-size: 15px;
-    color: #ffffff;
+    color: var(--branco);
     text-align: justify;
-}
-
-.nome__carros {
+    margin-top: 10px;
+  }
+  
+  .nome__carros {
     margin-left: 0.8rem;
     margin-bottom: 0;
-}
-
-.card-container--value {
+  }
+  
+  .card-container--value {
     display: flex;
     justify-content: space-between;
-}
-
-.preco__carros {
+    width: 100%;
+  }
+  
+  .preco__carros {
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.25rem;
     margin-left: 6%;
-}
-
-.img__x {
+  }
+  
+  .img__x {
     width: 11%;
     height: 11%;
     margin-top: 1rem;
-}
-
-.img__x:hover {
+  }
+  
+  .img__x:hover {
     cursor: pointer;
     border-radius: 20px;
     background-color: rgb(159, 15, 15);
-}
-
-.adicionar__produtos {
+  }
+  
+  .adicionar__produtos {
     width: 472px;
     height: 517px;
     padding: 40px;
     gap: 40px;
     margin-left: 110px;
-}
-
-.titulo__adicionar {
+  }
+  
+  .titulo__adicionar {
     font-family: "Lilita One", serif;
-}
-
-input[type=text],
-input[type=search] {
-    font-family: "PT Sans Caption", serif;
+  }
+  
+  input[type="text"],
+  input[type="search"] {
+    font-family: inherit;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--cinza-10);
+    color: var(--preto-5);
     width: 83%;
     height: 8vh;
-    border-style: solid;
-    border-color: var(--cinza-10);
+    border: 1px solid var(--cinza-10);
     border-radius: 20px;
-    border-width: 1px;
+    padding: 10px;
     margin-bottom: 40px;
-}
-
-::placeholder {
-    font-family: "PT Sans Caption", serif;
+  }
+  
+  ::placeholder {
+    font-family: inherit;
     font-size: 1rem;
     font-weight: 900;
     color: var(--cinza-10);
-}
-
-.container__botoes {
+  }
+  
+  .container__botoes {
     display: flex;
     gap: 1.5rem;
-}
-
-.botao__guardar {
-    font-family: "PT Sans Caption", serif;
-    color: #ffffff;
+  }
+  
+  .botao__guardar,
+  .botao__limpar {
+    font-family: inherit;
     font-size: 1.25rem;
     width: 40%;
     height: 8vh;
     border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .botao__guardar {
     background-color: var(--cinza-10);
-    border-style: solid;
-    border-color: var(--cinza-10);
-}
-
-
-.botao__limpar {
-    font-family: "PT Sans Caption", serif;
-    color: var(--cinza-10);
-    color: #ffffff;
+    color: var(--branco);
+  }
+  
+  .botao__limpar {
     background-color: var(--cinza-10);
-    font-size: 1.25rem;
-    width: 40%;
-    height: 8vh;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: var(--cinza-10);
-}
-
-.botao__guardar:hover, .botao__limpar:hover {
+    color: var(--branco);
+  }
+  
+  .botao__guardar:hover,
+  .botao__limpar:hover {
     background-color: var(--preto-5);
-    color: #ffffff;
-}
-
-.rodape {
+    color: var(--branco);
+  }
+  
+  /* Footer */
+  .rodape {
     display: flex;
     background-color: var(--preto-5);
-    padding: 1.25rem 0 1.25rem 0;
+    padding: 1.25rem 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.rodape__inicio {
+  }
+  
+  .rodape__inicio {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.rodape__logo {
+  }
+  
+  .rodape__logo {
     width: 180px;
-}
-
-.titulo__rodape {
+  }
+  
+  .titulo__rodape {
     font-family: "EB Garamond", serif;
-    color: #e5e5e5;
+    color: var(--branco);
     font-size: 2rem;
     line-height: 1rem;
     font-weight: 700;
-}
-
-.nome__rodape {
-    font-family: "PT Sans Caption", serif;
+  }
+  
+  .nome__rodape,
+  .descricao__rodape {
+    font-family: inherit;
     font-size: 1rem;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--branco);
+    text-align: center;
     margin-top: 0;
-    text-align: center;
-}
-
-.descricao__rodape {
-    font-family: "PT Sans Caption", serif;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 0px;
-    color: #ffffff;
-}
+  }
