@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lilita+One&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <title>AluraCarGeek</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo__completo">
+            <img class="cabecalho__logo" src="https://compramosqualquercarro.com/wp-content/uploads/2016/04/car07-1.png" alt="carro prata sedan">
+            <h1 class="titulo">Alura CarGeek</h1>
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="produtos">
+            <h1 class="titulo__produtos">Lista de carros:</h1>
+            <div class="container__produtos" data-id data-lista>
+
+            </div>
+        </section>
+        <section class="adicionar__produtos">
+            <h1 class="titulo__adicionar">Adicionar carros:</h1>
+            <form class="formulario" data-formulario>
+                <input type="text" placeholder="Nome..." data-titulo>
+                <input type="text" placeholder="Valor..." data-valor>
+                <input type="text" placeholder="Imagem..." data-imagem>
+
+                <div class="container__botoes">
+                    <input class="botao__guardar" type="submit" value="Guardar">
+                    <input class="botao__limpar" type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__inicio">
+            <img class="rodape__logo" src="https://compramosqualquercarro.com/wp-content/uploads/2016/04/car07-1.png" alt="carro prata sedan">
+            <h1 class="titulo__rodape">Alura CarGeek</h1>
+        </div>
+        <p class="nome__rodape">Desenvolvido por Alysson Santos</p>
+        <p class="descricao__rodape">Alura - 2024</p>
+    </footer>
+    <script src="./js/edicaoLista.js" type="module"></script>
+    <script src="./js/criarCarro.js" type="module"></script>
+    <script src="./js/deletarProduto.js" type="module"></script>
+</body>
+
+</html>
