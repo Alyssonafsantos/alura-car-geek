@@ -26,7 +26,7 @@ Projeto desenvolvido durante formação no curso de Front End da Oracle + Alura.
 
 1. **Clonagem do repositório no GitHub**:
     ```bash
-    git clone https://github.com/
+    git clone https://github.com/Alyssonafsantos/alura-car-geek
     ```
     
 2. **Instalação do JSON Server pelo terminal** 
