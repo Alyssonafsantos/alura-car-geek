@@ -3,13 +3,31 @@
     {
       "titulo": "Linea",
       "valor": "$ 60.000R$",
-      "imagem": "https://compramosqualquercarro.com/wp-content/uploads/2016/04/car07-1.png",
+      "imagem": "/imagens/linea.jpg",
       "id": 1
     },
     {
-      "titulo": "fasd",
-      "valor": "$ 45",
-      "imagem": "adf",
+      "titulo": "Prisma",
+      "valor": "$ 45.000R$",
+      "imagem": "/imagens/prisma.jpg",
+      "id": 2
+    },
+    {
+      "titulo": "Uno",
+      "valor": "$ 24.300R$",
+      "imagem": "/imagens/uno.jpg",
+      "id": 2
+    },
+    {
+      "titulo": "Voyage",
+      "valor": "$ 42.000R$",
+      "imagem": "/imagens/voyage.jpg",
+      "id": 2
+    },
+    {
+      "titulo": "Opala",
+      "valor": "$ 70.000R$",
+      "imagem": "/imagens/opala.jpg",
       "id": 2
     }
   ]
