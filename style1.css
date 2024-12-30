@@ -51,7 +51,8 @@
   }
   
   .produtos {
-    width: 49.7%;
+    width: 53%;
+    height: 80vh;
     padding: 2rem;
     gap: 2rem;
     text-align: center;
@@ -231,3 +232,44 @@
     text-align: center;
     margin-top: 0;
   }
+
+  @media screen and (min-width: 1104px){
+    div.container__produtos {
+      max-width: 485px;
+    }
+  }
+
+  @media screen and (max-width: 1104px) {
+    
+    .container__produtos{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 783px) {
+    .conteudo {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .produtos {
+      width: 71%;
+      gap: 0;
+    }
+  
+    .adicionar__produtos {
+      width: 71%;
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .container__botoes {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
