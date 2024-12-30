@@ -1,4 +1,4 @@
-import { conectaApi } from "./conectaApi.js";
+zimport { conectaApi } from "./conectaApi.js";
 
 const lista = document.querySelector("[data-lista]");
 
@@ -19,8 +19,9 @@ export default function constroiCard(titulo, valor, imagem, id) {
         try {
             await conectaApi.deletarProduto(id, titulo);
             produto.remove();
-        } catch (id) {
-            console.error(`Erro ao excluir o carro ${titulo}`);
+        } catch (error) {
+            console.error(`Erro ao excluir o carro ${titulo}`, error);
+            alert(`Não foi possível excluir o carro "${titulo}". Por favor, tente novamente mais tarde ou entre em contato com o suporte.`);
         };
     });
 
@@ -38,6 +39,3 @@ async function listaProdutos() {
 };
 
 listaProdutos();
-
-
-
