@@ -1,0 +1,21 @@
+{
+  "name": "alura-car-geek",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido durante formação no curso de Front End da Oracle + Alura. Foi desenvolvida uma página com as tecnologias, HTML, CSS e JavaScript. Nessa página é possível criar, ler, atualizar e deletar produtos em um simulador de e-commerce.\r ## (A) Funcionalidades",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3001 Produtos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alyssonafsantos/alura-car-geek.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Alyssonafsantos/alura-car-geek/issues"
+  },
+  "homepage": "https://github.com/Alyssonafsantos/alura-car-geek#readme"
+}

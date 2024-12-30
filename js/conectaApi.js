@@ -1,12 +1,13 @@
+const url = "http://localhost:3001/Produtos";
 async function listaProdutos() {
-    const conexao = await fetch("http://localhost:3000/Produtos");
+    const conexao = await fetch(url);
     const conexaoConvertida = await conexao.json();
 
     return conexaoConvertida;
 }
 
 async function criaCarro(titulo, valor, imagem) {
-    const conexao = await fetch("http://localhost:3000/Produtos", {
+    const conexao = await fetch(url, {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -26,7 +27,7 @@ async function criaCarro(titulo, valor, imagem) {
 }
 
 async function deletarProduto(id) {
-    const conexao = await fetch(`http://localhost:3000/Produtos/${id}`, {
+    const conexao = await fetch(`${url}/${id}`, {
         method: 'DELETE'
     });
 
