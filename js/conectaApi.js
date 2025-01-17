@@ -1,4 +1,4 @@
-const url = "http://localhost:3001/Produtos";
+const url = "https://6771ad77ee76b92dd4904888.mockapi.io/Produtos";
 async function listaProdutos() {
     const conexao = await fetch(url);
     const conexaoConvertida = await conexao.json();
